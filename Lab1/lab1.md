@@ -25,9 +25,10 @@
 #### Lab 1.2
 
 1. From Cloud console, do the following:
-    i. Create custom role named "my-custom-role-1" with the following permissions only:
+    1. Create custom role named "my-custom-role-1" with the following permissions only:
         - Iam.roles.get
         - Iam.roles.list
+
 
 
 2. From Cloud console, Explore primitive and pre-defined roles and their permissions.
