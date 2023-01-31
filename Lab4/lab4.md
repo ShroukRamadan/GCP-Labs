@@ -82,6 +82,13 @@
 
 1. Using gcloud & Docker:
     - Configure Docker & gcloud to work with GCR of your project. [hint: link]
+        ```
+        gcloud auth configure-docker
+        ```
+        ```
+        docker-credential-gcr configure-docker
+        ```
+    
     - Push Nginx docker image to GCR (make the image private).
     - Pull this image into a k8s setup or on a VM (hint: attach a SA on ur vm or gke with correct iam role).
 
