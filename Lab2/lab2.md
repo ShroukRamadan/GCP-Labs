@@ -43,8 +43,7 @@ gcloud compute networks subnets list --filter="network:custom-vpc"
 6. Modify the previous firewall rule to allow only ssh requests coming through Google’s IAP servers.
 
 ![Screenshot from 2023-01-29 12-49-00](https://user-images.githubusercontent.com/57557314/215321160-ef261285-ea57-4c4c-96d3-02f5fd7ff651.png)
- Subnet creation mode
-Auto subnets 
+ 
 
 #### Lab 2.2
 
