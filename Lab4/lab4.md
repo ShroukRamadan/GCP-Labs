@@ -71,10 +71,12 @@
 
 3.Deploy MySQL private instance and connect to it then create a new database 
 
-![Screenshot from 2023-01-29 15-01-24](https://user-images.githubusercontent.com/57557314/215330549-4f6135fd-914b-49e6-8954-6792c30fe788.png)
+![Screenshot from 2023-02-01 23-53-09](https://user-images.githubusercontent.com/57557314/216372277-1c724277-b18e-4816-968c-c902c50cb2ce.png)
+
+###### I can't connect to private Sql Instance so I create Public VM To connect to MySQL Instance
 
 
-![Screenshot from 2023-01-29 15-00-51](https://user-images.githubusercontent.com/57557314/215330537-63b1b23d-e853-4d49-b58f-3bc8318e2970.png)
+![Screenshot from 2023-02-02 17-48-54](https://user-images.githubusercontent.com/57557314/216372868-ff43e7b5-d010-45b5-aadb-610e839105e0.png)
 
 
 #### Lab 4.2
