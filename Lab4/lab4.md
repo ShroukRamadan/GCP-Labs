@@ -139,12 +139,16 @@
 
 
 3. Using Cloud Run:
-   - Run a pre-built docker image (pulled from GCR) [hint: link]
-      
+
+   - Run a pre-built docker image (pulled from GCR) 
    
+      ![Screenshot from 2023-02-02 22-00-22](https://user-images.githubusercontent.com/57557314/216437039-1ca97650-eb47-45ba-85f3-76ce6fca2d77.png)
    
-   - Build and Run any sample app [hint: link]
+   - Build and Run any sample app
+   
+     ![Screenshot from 2023-02-02 21-35-42](https://user-images.githubusercontent.com/57557314/216436804-780eeaa0-501f-41bb-84e4-aa328ba42cd3.png)
 
 
 4. Using App Engine:
-   - Run the sample hello-world python app [link]
+   - Run the sample hello-world python app
+   
