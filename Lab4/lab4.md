@@ -84,26 +84,67 @@
 
 1. Using gcloud & Docker:
     - Configure Docker & gcloud to work with GCR of your project. [hint: link]
+        
         ```
         gcloud auth configure-docker
         ```
-        ```
-        docker-credential-gcr configure-docker
-        ```
-    
+        
+        ![Screenshot from 2023-02-02 18-42-17](https://user-images.githubusercontent.com/57557314/216386974-f34dc6db-aa7b-458f-9967-0603a93badc2.png)
+       
     - Push Nginx docker image to GCR (make the image private).
-    - Pull this image into a k8s setup or on a VM (hint: attach a SA on ur vm or gke with correct iam role).
+    
+    ```
+     docker tag my-nginx gcr.io/shrouk-iti/my-nginx
 
+    ```
+    
+    ```
+     # gcloud docker -- push gcr.io/[PROJECT_ID]/[iMG-NAME] --make-private
+     gcloud docker -- push gcr.io/shrouk-iti/my-nginx --make-private
+    ```
+    
+    ![Screenshot from 2023-02-02 18-39-29](https://user-images.githubusercontent.com/57557314/216387152-67f26b7f-33b4-441f-ba74-87a63fefe891.png)
+    
+    
+    ![Screenshot from 2023-02-02 18-41-29](https://user-images.githubusercontent.com/57557314/216387260-805edc26-5973-4a22-b7ed-af28153f4ce5.png)
+
+
+    - Pull this image into a k8s setup or on a VM (hint: attach a SA on ur vm or gke with correct iam role).
+    
+     ###### Create a Service Account (docker-sa) with permission Storage Object Viewer role.
+    
+      ![Screenshot from 2023-02-02 18-53-51](https://user-images.githubusercontent.com/57557314/216390471-9ca1ad1c-2ea9-4ac1-87ba-d03722a2788c.png)
+     
+     
+     
+     
+     #####  Create cluster
+     
+    
+    ![Screenshot from 2023-02-02 20-00-11](https://user-images.githubusercontent.com/57557314/216405198-deedf147-e97a-43a9-94ae-6481a7693425.png)
+
+    ###### Deploy inginx app using image in google container registery
+    
+    ![Screenshot from 2023-02-02 19-59-18](https://user-images.githubusercontent.com/57557314/216405780-ebf8236e-1b96-427a-90b8-025e812899ed.png)
+
+    
 
 
 2. Using Cloud Functions:
-- Create a Function that runs whenever a file is uploaded to a cloud storage bucket. [hint: link]
+   - Create a Function that runs whenever a file is uploaded to a cloud storage bucket. [hint: link]
+     
+     ![Screenshot from 2023-02-02 20-39-59](https://user-images.githubusercontent.com/57557314/216419604-39ebb8bf-4248-45a8-b778-dd8774727969.png)
+     
+     ![Screenshot from 2023-02-02 20-26-57](https://user-images.githubusercontent.com/57557314/216419304-78e7c7f9-baea-48b7-8095-8c60f29472dc.png)
 
 
 3. Using Cloud Run:
-- Run a pre-built docker image (pulled from GCR) [hint: link]
-- Build and Run any sample app [hint: link]
+   - Run a pre-built docker image (pulled from GCR) [hint: link]
+      
+   
+   
+   - Build and Run any sample app [hint: link]
 
 
 4. Using App Engine:
-- Run the sample hello-world python app [link]
+   - Run the sample hello-world python app [link]
