@@ -151,4 +151,19 @@
 
 4. Using App Engine:
    - Run the sample hello-world python app
-   
+        
+    ```
+    git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
+    ```
+    ```
+    cd python-docs-samples/appengine/standard_python37/
+    ```
+    ```
+    gcloud app deploy
+    ```
+    ```
+    gcloud app browse
+    ```
+    ![Screenshot from 2023-02-05 12-55-36](https://user-images.githubusercontent.com/57557314/216814960-1dedbcd8-0c41-4b51-b373-dca66770a465.png)
+
+    ![Screenshot from 2023-02-05 12-54-42](https://user-images.githubusercontent.com/57557314/216814969-d168f065-ee4d-48c8-8886-250f516f8d9b.png)
